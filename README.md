@@ -1,8 +1,21 @@
 # UIAutomation
 total-luck.com UI Automation
 
-The required libraries:
-pip install -r requirements.txt
+How to Run
+
+    The required libraries:
+    pip install -r requirements.txt
+
+    Make sure you have chromedriver.exe placed in your project directory.
+
+    Run the script:
+
+    python main.py
+
+
+    Watch as the browser automatically opens, interacts with the site, and prints progress messages to the console.
+
+
 
 Total Luck Automation Test
 
@@ -84,17 +97,6 @@ How the Code Works
     The script creates a Chrome WebDriver session and calls the check_registration(driver) function.
     (Other tests like check_logo_play(driver) can easily be enabled by uncommenting them.)
 
-How to Run
-
-    Make sure you have chromedriver.exe placed in your project directory.
-
-    Save the script (for example, total_luck_automation.py).
-
-    Run the script:
-
-python total_luck_automation.py
-
-    Watch as the browser automatically opens, interacts with the site, and prints progress messages to the console.
 
 Notes
 
