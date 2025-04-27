@@ -1,6 +1,7 @@
 # UIAutomation
 total-luck.com UI Automation
 
+The required libraries:
 pip install -r requirements.txt
 
 Total Luck Automation Test
