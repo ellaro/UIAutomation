@@ -7,7 +7,7 @@ A Python Selenium script for end-to-end automation testing of [Total Luck](https
     ```markdown
     1. Install the required libraries:
        ```bash
-       pip install -r requirements.txt
+       pip install -r requirements.txt```
 
     2. Make sure chromedriver.exe is placed in your project directory.
     3. Run the script:
