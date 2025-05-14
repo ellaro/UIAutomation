@@ -5,15 +5,15 @@ A Python Selenium script for end-to-end automation testing of [Total Luck](https
 ## How to Run
 
     1. Install the required libraries:
-       ```bash
+```bash
        pip install -r requirements.txt
-       ```
+```
 
     2. Make sure chromedriver.exe is placed in your project directory.
     3. Run the script:
-         ```bash
+```bash
         python main.py
-        ```
+```
 
 
   The browser will open automatically, perform the automation steps, and print progress messages to the console.
