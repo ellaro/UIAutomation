@@ -2,7 +2,7 @@
 
 A Python Selenium script for end-to-end automation testing of [Total Luck](https://www.total-luck.com/), including site load verification, video interaction, and user registration flow.
 
-##How to Run
+## How to Run
 
     1. Install the required libraries:
        ```bash
@@ -37,21 +37,21 @@ The code is modular and divided into functions to allow easy testing of specific
    - Completes registration
    - Logs out
 
-## Code Structure
+## Code Structure 🔧
 
 - `check_site_loads(driver)`: Verifies the website loads.
 - `check_logo_play(driver)`: Tests clicking the logo and playing video.
 - `check_registration(driver)`: Completes registration flow.
 - Helper functions like `await_presence_click` and `await_find_click` abstract common actions.
 
-## Requirements
+## Requirements 📦
 
 - Python 3.7+
 - Selenium
 - Google Chrome
 - Chromedriver (version must match Chrome browser)
 
-## Notes
+## Notes 📝
 
 - Generates a **random email** each time to avoid duplication.
 - Uses `time.sleep()` to simulate realistic user behavior.
@@ -59,12 +59,13 @@ The code is modular and divided into functions to allow easy testing of specific
 - You can easily add more tests using the modular function structure.
 
 
-## Credits
+## Credits 🏆
 
     Website: Total Luck
 
     Automation: Selenium WebDriver
 
-##Tags
+## 🔖 Tags
 
-#selenium #automation #python #testing #qa #e2e-testing
+`#selenium` `#automation` `#python` `#testing` `#qa` `#e2e-testing`
+
