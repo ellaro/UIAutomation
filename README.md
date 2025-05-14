@@ -5,18 +5,15 @@ A Python Selenium script for end-to-end automation testing of [Total Luck](https
 ##How to Run
 
     1. Install the required libraries:
-   ```bash
-   pip install -r requirements.txt
-
-    Make sure you have chromedriver.exe placed in your project directory.
-
-    Run the script:
-
-    python main.py
+       ```bash
+       pip install -r requirements.txt '''
+    2. Make sure chromedriver.exe is placed in your project directory.
+    3. Run the script:
+         ```bash
+        python main.py
 
 
-    Watch as the browser automatically opens, interacts with the site, and prints progress messages to the console.
-
+  The browser will open automatically, perform the automation steps, and print progress messages to the console.
 
 
 Total Luck Automation Test
@@ -24,98 +21,50 @@ Total Luck Automation Test
 A Python Selenium script designed to automatically test the Total Luck website, including loading the site, playing a promotional video, and registering a new user.
 
 The code is modular and divided into functions to allow easy testing of specific flows such as login/registration and video playback.
-Features
 
-    Website Loading Test: Checks if the website loads successfully within a timeout.
+#### ✨ Features
+```markdown
+## Features
 
-    Logo Play Test: Clicks on the homepage banner and plays a video for 5 seconds.
+✅ **Website Load Test** – Verifies that the site loads within 30 seconds.
 
-    Registration Flow Test:
+✅ **Video Playback Test** – Clicks on the homepage banner and plays a promotional video.
 
-        Opens the registration form.
+✅ **Registration Flow Test** – Automates full user registration:
+   - Opens the registration form
+   - Enters a randomly generated email and password
+   - Accepts Terms of Service
+   - Completes registration
+   - Logs out
 
-        Fills in a randomly generated email and a fixed password.
+## Code Structure
 
-        Accepts the terms of service.
+- `check_site_loads(driver)`: Verifies the website loads.
+- `check_logo_play(driver)`: Tests clicking the logo and playing video.
+- `check_registration(driver)`: Completes registration flow.
+- Helper functions like `await_presence_click` and `await_find_click` abstract common actions.
 
-        Completes the registration process.
+## Requirements
 
-        Logs out after registration.
+- Python 3.7+
+- Selenium
+- Google Chrome
+- Chromedriver (version must match Chrome browser)
 
-Each part of the site is tested separately via its own function.
-Requirements
+## Notes
 
-    Python 3.7+
-
-    selenium package
-
-    Google Chrome browser installed
-
-    chromedriver.exe (placed in the project directory)
-
-Installation
-
-Install the required Python packages:
-
-pip install selenium
-
-Download the correct version of chromedriver.exe matching your Chrome version and place it in the same folder as your script.
-How the Code Works
-
-    check_site_loads(driver)
-    Verifies that the main website (https://www.total-luck.com/) loads within 30 seconds.
-
-    await_presence_click(driver, xpath, keys=None)
-    Waits for an element to appear, clicks it, and optionally sends keyboard input (like filling text fields).
-
-    await_find_click(driver, xpath, keys=None)
-    Immediately finds an element, clicks it, and optionally sends keyboard input.
-
-    check_logo_play(driver)
-
-        Loads the homepage.
-
-        Clicks the main logo/banner.
-
-        Starts playing the promotional video.
-
-        Waits 5 seconds to simulate video viewing.
-
-    check_registration(driver)
-
-        Loads the homepage.
-
-        Opens the registration form.
-
-        Fills in a random email and password.
-
-        Accepts terms of service.
-
-        Completes the registration.
-
-        Logs out after the registration is successful.
-
-    Main Execution
-    The script creates a Chrome WebDriver session and calls the check_registration(driver) function.
-    (Other tests like check_logo_play(driver) can easily be enabled by uncommenting them.)
+- Generates a **random email** each time to avoid duplication.
+- Uses `time.sleep()` to simulate realistic user behavior.
+- Errors are logged via try-except blocks.
+- You can easily add more tests using the modular function structure.
 
 
-Notes
-
-    Random Email Generation:
-    Each time the script runs, it generates a slightly different email to avoid duplication during registration.
-
-    Delays:
-    time.sleep() is used to simulate real user behavior and allow page elements to fully load.
-
-    Error Handling:
-    The script includes try-except blocks to catch and print errors if a step fails.
-
-    Extendability:
-    You can easily add more tests by following the function-based structure of the code.
-
-Credits
+## Credits
 
     Website: Total Luck
 
     Automation: Selenium WebDriver
+
+##Tags
+
+#selenium #automation #python #testing #qa #e2e-testing
