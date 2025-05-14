@@ -15,8 +15,7 @@ pip install -r requirements.txt
 python main.py
 ```
 
-
-  The browser will open automatically, perform the automation steps, and print progress messages to the console.
+The browser will open automatically, perform the automation steps, and print progress messages to the console.
 
 
 Total Luck Automation Test
@@ -68,7 +67,7 @@ The code is modular and divided into functions to allow easy testing of specific
 
     Automation: Selenium WebDriver
 
-## 🔖 Tags
+## Tags 🔖 
 
 `#selenium` `#automation` `#python` `#testing` `#qa` `#e2e-testing`
 
