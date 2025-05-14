@@ -1,10 +1,12 @@
-# UIAutomation
-total-luck.com UI Automation
+# Total Luck UI Automation Test
 
-How to Run
+A Python Selenium script for end-to-end automation testing of [Total Luck](https://www.total-luck.com/), including site load verification, video interaction, and user registration flow.
 
-    The required libraries:
-    pip install -r requirements.txt
+##How to Run
+
+    1. Install the required libraries:
+   ```bash
+   pip install -r requirements.txt
 
     Make sure you have chromedriver.exe placed in your project directory.
 
